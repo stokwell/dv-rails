@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_USER: 'dv_rails_user'
+      POSTGRES_PASSWORD: 'dv_rails_password'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+
+  web:
+    tty: true
+    stdin_open: true
+    links:
+      - 'postgres'
+    depends_on:
+      - 'postgres'  
+    build: .
+    ports:
+      - '4000:4000'
+    volumes:
+      - '.:/dv-rails'
+    env_file:
+      - '.env'
+
+volumes:
+  postgres:
