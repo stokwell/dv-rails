@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
+    %script{:src => "https://unpkg.com/feather-icons/dist/feather.min.js"}
+    = stylesheet_link_tag    "application"
+    
+    = csrf_meta_tags
+  %body
+    #cover
+      .container
+        .row.justify-content-center.vh-100.align-items-center
+          .col-sm-8.col-md-6.col-xl-4.col-lg-6.align-self-center#cover-capture
+            = yield

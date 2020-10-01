@@ -1,0 +1,24 @@
+.row.h-100
+    .navigation.col-md-1.col-lg-1.h-100
+        .logo 
+            %h4 Nav 
+        %ul.nav.navbar-nav.flex-row.flex-xl-column.flex-grow-1.justify-content-between.justify-content-xl-center 
+            %li 
+                = link_to(destroy_user_session_path, method: :delete) do  
+                    Log out    
+                    -# = icon('fas', 'cog', class: "fa-lg")
+                    -# Logout
+            %li 
+                = icon('fas', 'history', class: 'fa-lg') 
+
+
+    .sidebar.col-md-3.col-lg-3.h-100
+        %h4 Dashboard Index Page
+
+
+    .main.col.col-md-8.col-lg-8.h-100
+        .search.border-bottom
+            .search-header
+                .form 
+                    .form-group
+                        %input{type: "text", class: "form-control", placeholder: "Translate"}
