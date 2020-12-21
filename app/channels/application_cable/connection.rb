@@ -1,6 +1,5 @@
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
-
     identified_by :current_user
 
     def connect      
@@ -10,9 +9,7 @@ module ApplicationCable
     private
   
     def find_verified_user
-    
       user_key = cookies.encrypted["_dv_rails_session"]["warden.user.user.key"]
-       
       if user_key
         user_id = user_key[0]
         verified_user = User.find_by(id: user_id) 

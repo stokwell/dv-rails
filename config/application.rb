@@ -15,6 +15,7 @@ module DvRails
     config.log_tags  = %i[subdomain uuid]
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
     config.action_controller.include_all_helpers = true
+    config.autoload_paths << Rails.root.join('lib')
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do

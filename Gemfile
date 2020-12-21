@@ -42,6 +42,9 @@ gem "omniauth"
 gem 'omniauth-facebook', '~> 4.0'
 gem 'omniauth-vkontakte'
 gem "font-awesome-sass"
+gem 'jwt'
+gem 'simple_command'
+
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do

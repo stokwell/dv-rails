@@ -6,8 +6,6 @@
   -# = f.text_field :first_name, autofocus: true, autocomplete: 'first_name', placeholder: 'First Name', class: 'mb-3 form-control'
   -# = f.text_field :last_name, autofocus: true, autocomplete: 'last_name', placeholder: 'Last Name', class: 'mb-3 form-control'
   = f.email_field :email, autofocus: true, autocomplete: 'email', placeholder: 'Email', class: 'mb-3 form-control'
-  /= f.text_field :organisation, autofocus: true, autocomplete: 'organisation', placeholder: 'organisation', class: 'mb-3 form-control'
-  = f.hidden_field :rise_middleware_instance_url, autofocus: false, autocomplete: 'rise_middleware_instance_url', placeholder: 'rise middleware instance url', class: 'mb-3 form-control', value: 'https://rise.mpiwg-berlin.mpg.de', readonly: true
   = f.password_field :password, placeholder: 'Password', class: 'mb-3 form-control'
   = f.password_field :password_confirmation, placeholder: 'Password confirmation', class: 'form-control mb-3'
   .mb-4
