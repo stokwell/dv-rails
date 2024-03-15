@@ -4,6 +4,14 @@ TBD
 
 ## References
 
+### Plattform Engineering
+
+[Git Workflows for Platform Engineers](https://www.youtube.com/watch?v=c8mw636b3ek&ab_channel=AllThingsOpen) (YouTube)
+
+[DevOps is dead. Embrace platform engineering](https://www.youtube.com/watch?v=F8xXXVoLqoo&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D) (YouTube)
+
+[Non-Technical Challenges of Platform Engineering](https://www.youtube.com/watch?v=m6nlREbQ6LQ&t=665s&ab_channel=HashiCorp) (YouTube)
+
 ### Containerisation
 
 [Docker Rails Best Practicies](https://lipanski.com/posts/dockerfile-ruby-best-practices#dockerfile-for-a-rails-app-with-assets-and-private-dependencies) (Article)
@@ -17,10 +25,6 @@ TBD
 [Scan Container Images with Clair V4 in CI/CD Pipeline](https://www.youtube.com/watch?v=fjlEGF4qyQ0&ab_channel=mkdev) (YouTube)
 
 [Clair V4 installation guide for test purpose](https://quay.github.io/clair/howto/testing.html) (Repo)
-
-### Application templating with Nomad Pack
-
-[Nomad Pack and Templating](https://www.youtube.com/watch?v=5R8N2p4XSWs&ab_channel=HashiCorp) (YouTube)
 
 ## Nomad
 
@@ -40,6 +44,8 @@ TBD
 
 [Nomad Task Driver for containerd](https://www.youtube.com/watch?v=DTdMjTgR3kg&ab_channel=HashiCorp) (YouTube)
 
+[Nomad Pack and Templating](https://www.youtube.com/watch?v=5R8N2p4XSWs&ab_channel=HashiCorp) (YouTube)
+
 ## Traefic 
 
 [Traefik Blog Repositories](https://github.com/traefik-tech-blog) (Repo)
@@ -48,25 +54,6 @@ TBD
 
 [Simplifying Infrastructure and Network Automation with HashiCorp and Traefik](https://www.youtube.com/watch?v=7VtZEZAi6qU&ab_channel=TraefikLabs) (YouTube)
 
-## OpenTelemetry
-
-[OpenTelemetry: The Vision, Reality, and How to Get Started - Dotan Horovits, Logz.io](https://www.youtube.com/watch?v=qE1ggEmvz2Y&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D) (YouTube)
-
-## Usefull links and literature
-
-[The Best DevOps Tools, Platforms, And Services In 2023?](https://www.youtube.com/watch?v=-zKYT2I_WhE&t=41s&ab_channel=DevOpsToolkit) (YouTube)
-
-[DevOps is dead. Embrace platform engineering](https://www.youtube.com/watch?v=F8xXXVoLqoo&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D) (YouTube)
-
-[WHAT IS THE CORRECT WAY TO SET UP PUMA, RAILS AND NGINX WITH DOCKER?](https://www.appsloveworld.com/docker/100/23/what-is-the-correct-way-to-set-up-puma-rails-and-nginx-with-docker) (Article)
-
-[Process vs Thread](https://www.youtube.com/watch?v=4rLW7zg21gI&ab_channel=ByteByteGo) (YouTube)
-
-[How we migrated application servers from Unicorn to Puma](https://about.gitlab.com/blog/2020/07/08/migrating-to-puma-on-gitlab/) (Article)
-
-[Git Workflows for Platform Engineers](https://www.youtube.com/watch?v=c8mw636b3ek&ab_channel=AllThingsOpen) (YouTube)
-
-[ImmutableServer](https://martinfowler.com/bliki/ImmutableServer.html) (Article)
 
 ## Books 
 
@@ -76,18 +63,3 @@ TBD
 
 [Multi-Cloud Architecture and Governance](https://www.oreilly.com/library/view/multi-cloud-architecture-and/9781800203198) (O'reilly)
 
-## Something more to think about
-
-[Is eBPF The End Of Kubernetes Sidecar Containers?](https://www.youtube.com/watch?v=7ZVQSg9HX68&ab_channel=DevOpsToolkit) (YouTube)
-
-[Андрей Девяткин — Почему я советую людям не учить Ansible](https://www.youtube.com/watch?v=vTLHuyYAswo&ab_channel=DevOops) (YouTube)
-
-[What Are Microservices Really All About? (And When Not To Use It)](https://www.youtube.com/watch?v=lTAcCNbJ7KE&ab_channel=ByteByteGo) (YouTube)
-
-[Microservices explained - the What, Why and How?](https://www.youtube.com/watch?v=rv4LlmLmVWk&ab_channel=TechWorldwithNana) (YouTube)
-
-[Non-Technical Challenges of Platform Engineering](https://www.youtube.com/watch?v=m6nlREbQ6LQ&t=665s&ab_channel=HashiCorp) (YouTube)
-
-[Distributed Flexibility: Nomad and Vault in a Post-Kubernetes World](https://www.youtube.com/watch?v=U1zn5OO8dHs&ab_channel=HashiCorp)  (YouTube)
-
-[You want a real DNS Server at home? (bind9 + docker)](https://www.youtube.com/watch?v=syzwLwE3Xq4&t=1432s&ab_channel=ChristianLempa) (YouTube)

@@ -154,12 +154,8 @@ EXPOSE 3000
 # Copy code
 COPY --chown=my_user:my_user . .
 
-# Copy artifacts
-# 1) Installed gems
 COPY --from=production-builder $BUNDLE_PATH $BUNDLE_PATH
-# 2) Compiled assets (by Webpacker in this case)
+
 COPY --from=production-builder /home/my_user/app/public/packs /home/my_user/app/public/packs
-# 3) We can even copy the Bootsnap cache to speed up our Rails server load!
-# COPY --chown=my_user:my_user --from=production-builder /home/my_user/app/tmp/cache/bootsnap* /home/my_user/app/tmp/cache/
 
 CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]

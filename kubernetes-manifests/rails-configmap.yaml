@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata: 
-  name: rails-configmap
-data:
-  secret_key_base:
