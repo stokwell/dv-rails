@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-https://docs.docker.com/build/building/multi-stage/
-=======
-## CI/CD
+# Ruby on Rails Backend for Daily Vocabulary project
 
-### Build production image of dv-rails (locally)
+TBD
 
-```docker build --target production -t stokwell/dv-rails:latest . ```
-
-```docker run --env SECRET_KEY_BASE=secret -it -p 3000:3000 stokwell/dv:latest rails s```
+## References
 
 ### Containerisation
 
@@ -29,16 +24,6 @@ https://docs.docker.com/build/building/multi-stage/
 
 ## Nomad
 
-### Talks
-
-[Nomad: Past, Present, and Future](https://www.youtube.com/watch?v=JCwgvMXRCQg&ab_channel=HashiCorp) (YouTube)
-
-[Nomad: Past, Present, and Future 2](https://www.youtube.com/watch?v=MbAXksROlv4&ab_channel=HashiCorp) (YouTube)
-
-[How Nomad 1.3 Enables Running Work at the Edge](https://www.youtube.com/watch?v=Khcbr8zkp_Q&t=258s&ab_channel=HashiCorp) (YouTube)
-
-### Tutorials
-
 [Nomad at the Edge](https://www.youtube.com/watch?v=59z7gjNSUvs&ab_channel=HashiCorp) (YouTube)
 
 [HashiCorp Nomad A Simpler Way to Orchestrate Your Containers](https://www.youtube.com/watch?v=BaRqLIaTfZU&ab_channel=HashiCorp) (YouTube)
@@ -54,40 +39,6 @@ https://docs.docker.com/build/building/multi-stage/
 [Building Immutable Server Images with SaltStack and Packer](https://www.jamesridgway.co.uk/building-immutable-server-images-with-saltstack-and-packer/) (Article)
 
 [Nomad Task Driver for containerd](https://www.youtube.com/watch?v=DTdMjTgR3kg&ab_channel=HashiCorp) (YouTube)
-
-### Start nomad in development mode localy 
-
-install nomad
-
-run ```nomad agent -dev -bind 0.0.0.0 -log-level INFO```
-
-### Start nomad localy using Vargant for development
-
-...
-
-### Deploy Nomad Cluster with Terraform on AWS
-
-[Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4&ab_channel=DevOpsDirective) (YouTube)
-
-[Terraform Modules for Nomad Deployment](https://registry.terraform.io/modules/hashicorp/nomad/aws/latest) (Repo)
-
-## Packer 
-
-TBD
-
-### Tutorials 
-
-[Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial](https://www.youtube.com/watch?v=lEqD3mRcqSo&list=WL&index=6&t=144s&ab_channel=TechnoTim) (YouTube)
-
-## Consul 
-
-[Getting into HashiCorp Consul (Course)](https://www.youtube.com/watch?v=0H06VKvlTJQ&list=PL81sUbsFNc5b8i2g2sB_tG-PuZxEdlDpK&ab_channel=HashiCorp) (YouTube)
- 
-install consul with homebrew ```brew install consul```
-
-verify installation ```consul version```
-
-run ```consul agent -dev```
 
 ## Traefic 
 
@@ -140,4 +91,3 @@ run ```consul agent -dev```
 [Distributed Flexibility: Nomad and Vault in a Post-Kubernetes World](https://www.youtube.com/watch?v=U1zn5OO8dHs&ab_channel=HashiCorp)  (YouTube)
 
 [You want a real DNS Server at home? (bind9 + docker)](https://www.youtube.com/watch?v=syzwLwE3Xq4&t=1432s&ab_channel=ChristianLempa) (YouTube)
->>>>>>> ba3e0e6 (Squashed commit)
