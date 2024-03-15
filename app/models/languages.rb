@@ -1,0 +1,3 @@
+class Languages 
+  YANDEX_DICTIONARY_API_LANGUAGES = 
+end

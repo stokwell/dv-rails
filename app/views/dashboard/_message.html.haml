@@ -1,0 +1,3 @@
+= user_input.content
+= link_to 'Translate', user_input_translate_path(id: user_input.id), method: :get, remote: true
+= link_to 'Delete', user_input_path(user_input.id), method: :delete

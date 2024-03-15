@@ -1,0 +1,8 @@
+.row.user_inputs
+  .col#user_inputs
+    - @user_inputs.each do |user_input|
+      %div{class: "highlight", id: "user_input_#{user_input.id}"}
+        = user_input.content
+        = link_to 'Translate', user_input_translate_path(id: user_input.id), method: :get, remote: true
+        = link_to 'Delete', user_input_path(user_input), method: :delete, remote: true
+  .col#translation

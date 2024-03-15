@@ -1,0 +1,86 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dv-rails-deployment
+  labels: 
+    app: dv-rails
+spec:
+<<<<<<< HEAD
+  replicas: 2
+=======
+  replicas: 1
+>>>>>>> ba3e0e6 (Squashed commit)
+  selector:
+    matchLabels:
+      app: dv-rails
+  template:
+    metadata:
+      labels:
+        app: dv-rails
+    spec:
+      containers:
+      - name: dv-rails-backend
+<<<<<<< HEAD
+        image: stokwell/dv-rails:0.2.3
+        command: ["bundle", "exec", "rails", "server", "-p", "3000", "-b", "0.0.0.0"]
+        # image: stokwell/daily-vocabulary:0.1.2
+=======
+        image: stokwell/dv-rails:0.3.8
+        command: ["bundle", "exec", "rails", "server", "-p", "3000", "-b", "0.0.0.0"]
+>>>>>>> ba3e0e6 (Squashed commit)
+        ports:
+           - containerPort: 3000
+        env:
+        - name: DATABASE_USER
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-configmap
+              key: username
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-configmap
+              key: password
+        - name: DATABASE_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-configmap
+              key: host
+        - name: REDIS_URL
+          valueFrom:
+            configMapKeyRef:
+              name: redis-configmap
+              key: redis_url
+<<<<<<< HEAD
+        # - name: REDIS_HOST
+        #   valueFrom:
+        #     configMapKeyRef:
+        #       name: redis-configmap
+        #       key: host
+=======
+        - name: SECRET_KEY_BASE
+          value: 940c32722b7ee37d6aeb95e1c647d6460b5f47b6b5aae975e7d9dde1557fc7f01531884aa7aad9c2c2a06ce2760f06fd85d11fd9ea7168d42b5345da12731e26
+        - name: RAILS_ENV
+          value: production
+        - name: RAILS_SERVE_STATIC_FILES
+          value: 'true'
+>>>>>>> ba3e0e6 (Squashed commit)
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dv-rails-service
+spec:
+  selector:
+    app: dv-rails
+<<<<<<< HEAD
+  # type: LoadBalancer
+  ports:
+    - name: "3000"
+=======
+  ports:
+    - protocol: TCP
+>>>>>>> ba3e0e6 (Squashed commit)
+      port: 3000
+      targetPort: 3000
+      # nodePort: 30000

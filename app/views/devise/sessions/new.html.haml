@@ -1,0 +1,16 @@
+%h3.text-center Daily Vocabulary
+%p.text-center.mb-4 Login
+
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  = f.email_field :email, autofocus: true, autocomplete: 'email', placeholder: 'Email', class: 'mb-3 form-control'
+  = f.password_field :password, placeholder: 'Password', class: 'mb-3 form-control'
+  .mb-1
+    Don't have an account yet?
+    = link_to('Create account', new_user_registration_path)
+  .mb-4
+    Forgot your password?
+    = link_to('Reset password', new_user_password_path)
+  = f.submit  'Login', class: 'btn btn-sm btn-dark btn-block'
+
+%p= button_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path, class: 'btn btn-sm btn-danger btn-block'
+

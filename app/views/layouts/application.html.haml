@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Daily Vocabulary
+    = csrf_meta_tags
+    = csp_meta_tag
+    = action_cable_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %nav.navbar.navbar-light.bg-light.justify-content-between.fixed-top
+      %a.navbar-brand Daily Vocabulary
+      .navbar-nav
+        = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-item nav-link'
+    .container-fluid.page-wrapper.vh-100
+      .row.h-100
+        .navigation.col-md-4.col-lg-4
+          %ul.nav.navbar-nav.flex-row.flex-xl-column.flex-grow-1.justify-content-between.justify-content-xl-center
+            %li.mb-2
+              Learning Progress
+              %ul.sub-list.mt-2
+                = link_to(dashboard_today_path, method: :get) do
+                  %li  Today
+                = link_to(dashboard_yesterday_path, method: :get) do
+                  %li  Yesterday
+                = link_to(dashboard_path) do
+                  %li  Overview
+            %li.mb-2
+              Quotes 
+              %ul.sub-list.mt-2
+                = link_to(quotes_path(query: 'all')) do
+                  %li  All together
+                = link_to(quotes_path(query: 'my')) do
+                  %li  My foundings
+        .main.col
+          = yield
+

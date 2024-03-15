@@ -29,3 +29,12 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+docker_containers/docker-language-detection-api/
+docker_containers/linguee-api-dockerized/src/
+
+# Ignore environment file
+.env
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
