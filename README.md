@@ -1,6 +1,42 @@
 # Ruby on Rails Backend for Daily Vocabulary project
 
-TBD
+Kill this project and rewrite it with Elixir and Phoenix. 
+
+[Tools for running Distributed Elixir/Erlang with Nomad and Consul](https://hexdocs.pm/caravan/Caravan.html)
+
+[Elixir: The Wickedly Awesome Batch and Stream Processing Language You Should Have in Your Toolbox](https://www.youtube.com/watch?v=4c6tY0dLni4&t=2s)
+
+## Docs 
+
+[Phoenix Channels](https://tmbb.github.io/phoenix/channels.html) (Official Docs)
+
+[Security considerations of Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/security-model.html) (Official Docs)
+
+Securing WebSockets in Elixir
+
+
+## Security Considerations for WebSockets
+
+1. **Encryption (TLS/SSL)**:
+   - Secure WebSocket connections using Transport Layer Security (TLS) or Secure Sockets Layer (SSL) to encrypt data exchange between clients and servers. Use `wss://` URLs for WebSocket connections over SSL/TLS.
+
+2. **Authentication**:
+   - Authenticate users before establishing WebSocket connections using mechanisms like JSON Web Tokens (JWT) or session cookies. Validate user credentials on the server.
+
+3. **Authorization**:
+   - Enforce access control policies to restrict user actions over WebSocket connections based on their permissions. Implement authorization logic on the server side.
+
+4. **Input Validation**:
+   - Validate and sanitize all data received from WebSocket clients to prevent security vulnerabilities such as injection attacks (e.g., SQL injection, XSS).
+
+5. **Rate Limiting**:
+   - Implement rate limiting to prevent abuse and protect the WebSocket server from denial-of-service (DoS) attacks. Limit the number of connections, messages, or operations per client.
+
+6. **Cross-Origin Resource Sharing (CORS)**:
+   - Configure CORS policies to restrict or allow cross-origin requests based on security requirements. Use appropriate CORS headers to control WebSocket server access from different origins.
+
+7. **Monitoring and Logging**:
+   - Enable logging and monitoring to track WebSocket connection activity, detect suspicious behavior, and troubleshoot security incidents. Monitor server performance and resource utilization.
 
 ## References
 
