@@ -1,18 +1,28 @@
 # Ruby on Rails Backend for Daily Vocabulary project
 
-Kill this project and rewrite it with Elixir and Phoenix. 
+Kill this project and rewrite it with Elixir and Phoenix. (or maybe not?)
+
+### Ruby 
+
+[New Langchain.rb Assistants interface](https://www.loom.com/share/e883a4a49b8746c1b0acf9d58cf6da36) 
+
+[Semantic search (search by meaning) - Rails, OpenAI, langchain.rb, pg_vector](https://www.youtube.com/watch?v=799wrxVZXWA&t=772s&ab_channel=CJAvilla)
+
+[Building an AI Assistant that operates a simulated E-commerce Store](https://www.loom.com/share/83aa4fd8dccb492aad4ca95da40ed0b2)
+
+### Elixir
+
+[Deploying large distributed Elixir clusters - Razvan Draghici](https://www.youtube.com/watch?v=hsf03gH4q84&ab_channel=ElixirToronto)
 
 [Tools for running Distributed Elixir/Erlang with Nomad and Consul](https://hexdocs.pm/caravan/Caravan.html)
 
 [Elixir: The Wickedly Awesome Batch and Stream Processing Language You Should Have in Your Toolbox](https://www.youtube.com/watch?v=4c6tY0dLni4&t=2s)
 
-## Docs 
-
 [Phoenix Channels](https://tmbb.github.io/phoenix/channels.html) (Official Docs)
 
 [Security considerations of Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/security-model.html) (Official Docs)
 
-Securing WebSockets in Elixir
+### Securing WebSockets in Elixir
 
 
 ## Security Considerations for WebSockets
